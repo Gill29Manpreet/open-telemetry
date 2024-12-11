@@ -42,6 +42,10 @@ services:
     image: splunk/splunk
     ports:
         - 8000:8000
+  grafana:
+    image: splunk/splunk
+    ports:
+        - 8000:8000
   collector:
     image: otel/opentelemetry-collector-contrib
     volumes: 
