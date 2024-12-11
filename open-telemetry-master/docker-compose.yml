@@ -39,8 +39,8 @@ services:
       ports:
         - 9090:9090
   splunk:
-    image: splunk/splunk
-    ports:
+      image: splunk/splunk
+      ports:
         - 8000:8000
   collector:
     image: otel/opentelemetry-collector-contrib
