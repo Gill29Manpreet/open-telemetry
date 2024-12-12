@@ -40,6 +40,8 @@ services:
         - 9090:9090
   splunk:
     image: splunk/splunk
+    command:
+        - 'docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=adminNTT" --name splunk splunk/splunk:latest'
     ports:
         - 8000:8000
   grafana:
