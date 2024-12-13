@@ -41,7 +41,7 @@ services:
   splunk:
     image: splunk/splunk:latest
     command:
-        - 'docker run -p 8000:8000 -e "SPLUNK_PASSWORD=<password>" \
+        - 'docker run -p 8000:8000 -e "SPLUNK_PASSWORD=Waheguru@2911" \
              -e "SPLUNK_START_ARGS=--accept-license" \
              -it --name so1 splunk/splunk:latest'
     ports:
